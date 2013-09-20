@@ -46,20 +46,13 @@
         
         <!-- page content: put your content inside the <article> tag and customize/format with the Bootstrap scaffolding: http://twitter.github.com/bootstrap/scaffolding.html -->
         <article class="libsite-container container">
-            
-            <div class="row-fluid">
-                <div class="span12">
-                    <h1>Bootstrap Libsite7 Lite Swatch</h1>
-                    <p>What is this? This is a modified "swatch" for Twitter Bootstrap <a href="http://twitter.github.com/bootstrap/index.html">http://twitter.github.com/bootstrap/index.html</a>. You can use the basic html structure of this page and the Bootstrap files to deploy responsive, branded pages/sites for GW Libraries</p>
-                </div>
-            </div>
+           {% block content %} 
             <div class="row-fluid">
                 <div class="span12"> <!-- this is a 'content' column that takes up 12 of the 12 columns within this content area -->
                     
-                    
-                    
                 </div>
             </div>
+	    {% endblock content %}
             
         </article> <!-- /container -->
         <!-- end page content -->
