@@ -23,7 +23,7 @@ DATABASES = {
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = ['gwdev-dchud12.wrlc.org']
+ALLOWED_HOSTS = []
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -111,7 +111,6 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    '/home/dchud/projects/etdui/etd/ui/templates'
 )
 
 INSTALLED_APPS = (
@@ -158,3 +157,9 @@ LOGGING = {
         },
     }
 }
+
+# Be sure to create your own 'local_settings.py' file as described in README
+try:
+    from local_settings import *
+except ImportError:
+    pass
