@@ -39,3 +39,4 @@ nosetests.xml
 # Vim
 *.swp
 local_settings.py
+wsgi.py

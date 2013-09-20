@@ -86,5 +86,5 @@ Update the wsgi.py file (Change the value of ENV to your environment path):
         
 Now run the server:
 
-        $ cd <ETDUI_HOME/etd
+        $ cd <ETDUI_HOME>/etd
         $ python ./manage.py runserver 0.0.0.0:8080
