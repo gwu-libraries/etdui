@@ -447,7 +447,7 @@
    <field name="language" type="text" indexed="false" stored="true"/>
    <field name="abstract" type="text" indexed="true" stored="true"/>
    <field name="binary_type" type="text" indexed="false" stored="true" multiValued="true"/>
-   <field name="binary_filename" type="text" indexed="true" stored="true" multivalue="true" />
+   <field name="binary_filename" type="text" indexed="true" stored="true" multiValued="true" />
 
 
 <!-- 
