@@ -67,7 +67,7 @@ Set up Solr via jetty:
 Create a local settings file for etdui by copying the local settings 
 template to an active file:
 
-        $ cd <ETDUI_HOME>/etd/etd
+        $ cd <ETDUI_HOME>/etdui/etd
         $ cp local_settings.py.template local_settings.py
 
 Update the values in the ```local_settings.py``` file:  set a 
@@ -87,4 +87,4 @@ Update the wsgi.py file (Change the value of ENV to your environment path):
 Now run the server:
 
         $ cd <ETDUI_HOME>/etd
-        $ python ./manage.py runserver 0.0.0.0:8080
+        $ python ./manage.py runserver 0.0.0.0:8080 [or try 8888]
