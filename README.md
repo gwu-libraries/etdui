@@ -50,7 +50,7 @@ Set up Solr via jetty:
 
 * Edit ```/etc/default/jetty``` to set ```NO_START=0```, set
   ```JAVA_HOME=/usr/lib/jvm/java-6-openjdk-amd64```, and consider
-  changing ```JETTY_PORT``` to a port that won't be publicly exposed.
+  changing ```JETTY_PORT``` to a port that won't be publicly exposed (do not use 8080 if you will be running the server on that port or else the port will be unavailable).
   In development and testing, exposing Solr might be helpful; never 
   expose it in production.
 
@@ -87,4 +87,4 @@ Update the wsgi.py file (Change the value of ENV to your environment path):
 Now run the server:
 
         $ cd <ETDUI_HOME>/etd
-        $ python ./manage.py runserver 0.0.0.0:8080 [or try 8888]
+        $ python ./manage.py runserver 0.0.0.0:8080 [or try 8089 if that port is unavailable (e.g. being used by jetty)]
